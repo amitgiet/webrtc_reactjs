@@ -1,0 +1,177 @@
+$primary-button-color: #2a7086;
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin space-around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@mixin icon-filter {
+  filter: invert(39%) sepia(92%) saturate(2158%) hue-rotate(200deg)
+    brightness(98%) contrast(89%);
+}
+
+.default-search-input {
+  border-radius: 6px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  border: none;
+  height: 35px;
+}
+
+.default-btn {
+  --btn-height: 35px;
+  background-color: $primary-button-color;
+  border-radius: 40px;
+  height: 35px;
+  color: #fff;
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $primary-button-color;
+    color: #fff;
+    outline: none;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+}
+
+.secondary-btn {
+  height: 35px;
+  color: #2a7086;
+  background: #ffffff;
+  border: 1.5px solid #2a7086;
+  border-radius: 40px;
+}
+
+.draft-btn {
+  min-width: 80px;
+  border-radius: 5px;
+  height: 35px;
+  background-color: #f2c94c;
+  color: #fff;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: #fff;
+    background-color: #f2c94c;
+    border: 1px solid #e7b41b;
+  }
+}
+
+.select-checkbox {
+  position: absolute;
+  display: none;
+  top: 10px;
+  right: 10px;
+  outline: none !important;
+
+  .ant-checkbox-inner {
+    border-radius: 20px;
+  }
+
+  .ant-checkbox-inner {
+    padding: 12px;
+  }
+
+  .ant-checkbox-inner {
+    border: 3px solid #b1b8be;
+  }
+
+  .ant-checkbox-inner::after {
+    border: 1px solid #fff !important;
+    border-top: 0 !important;
+    border-left: 0 !important;
+    transform: rotate(45deg) scale(1.5) translate(-10%, -60%) !important;
+    width: 4px;
+    outline: none !important;
+  }
+}
+
+@mixin mr($px) {
+  margin-right: $px;
+}
+
+.mr-10 {
+  margin-right: 10px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mt-4 {
+  margin-top: 4px;
+}
+
+.mb-5 {
+  margin-bottom: 5px;
+}
+
+.ml-5 {
+  margin-left: 10px;
+}
+
+.mr-5 {
+  margin-right: 5px;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.vertical-align {
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.w-auto {
+  min-width: auto !important;
+}
+
+.my-10 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.py-10 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.px-10 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.p-2 {
+  padding: 2px;
+}
+
+.p-10 {
+  padding: 10px;
+}
+
+.pt-4 {
+  padding-top: 4px;
+}
+
+// Font Styles
+.b {
+  font-weight: 600;
+}
